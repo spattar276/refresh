@@ -1,0 +1,9 @@
+1. How to inherit the properties of class A to class B.
+
+2. If the client fires 10 requests, how does JS code executed in single thread?
+
+3. Which is the best html syntax to create table, table or div and why?
+
+4. Different ways of creating objects
+
+5. What is difference between grunt, gulp and webpack
