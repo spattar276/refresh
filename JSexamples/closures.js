@@ -4,6 +4,7 @@ function makeAdder(x) {
   };
 }
 
+
 var add5 = makeAdder(5);
 var add10 = makeAdder(10);
 
