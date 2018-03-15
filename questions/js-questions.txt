@@ -1,9 +1,105 @@
 1. How to inherit the properties of class A to class B.
 
+Use extends, call , prototype
+
+1] class A {
+
+}
+
+class B extends A {
+
+}
+--------------------------------------------
+function A(a) {
+  this.varA = a;
+}
+
+A.prototype = {
+  varA: null, 
+  doSomething: function() {
+    // ...
+  }
+};
+
+function B(a, b) {
+  A.call(this, a);  //call
+  this.varB = b;
+}
+B.prototype = Object.create(A.prototype, {
+  varB: {
+    value: null, 
+    enumerable: true, 
+    configurable: true, 
+    writable: true 
+  },
+  doSomething: { 
+    value: function() { 
+
+    },
+    enumerable: true,
+    configurable: true, 
+    writable: true
+  }
+});
+B.prototype.constructor = B;
+
+var b = new B();
+b.doSomething();
+
+--------------------------------------------------------------------------------
 2. If the client fires 10 requests, how does JS code executed in single thread?
 
+Elaborate more on this?
+
+
+
+--------------------------------------------------------------------------------
 3. Which is the best html syntax to create table, table or div and why?
+
+div is better
+
+- If <table> tags are used then you need to override the browser default styles and layout before adding your own code, so in this case <div> tags save on a lot of boilerplate CSS.
+
+- smooths cross-browser development.
+
+- div suit devices with very different screen sizes
+
+- <div> tags are more versatile and allow a bit more shaping and positioning than tables, as they are not stuck together like the table rows and cells.
+--------------------------------------------------------------------------------
 
 4. Different ways of creating objects
 
+var name = {};
+var myCar = new Object();
+var animal1 = Object.create(Animal)
+--------------------------------------------------------------------------------
+
 5. What is difference between grunt, gulp and webpack
+
+https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners
+
+why use them 
+1] increased projects’ complexity, concerns regarding performance, maintenance and security
+2] automate tasks like static code analysis, test cases execution, etc. – task runners are used.
+
+Gulp , Grunt - They both automate tasks, use Node.js, and they are both powerful and efficient.
+
+Webpack  is a bundler and it comes in handy when you need to pack multiple assets (images, fonts, etc.) together into a dependency graph.
+------------
+Diffrences
+
+Comparing Grunt vs Gulp, the core difference is that where GruntJS uses configuration objects to define tasks declaratively, Gulp defines them as JavaScript functions. It builds on top of the piping concepts (sources, filters, sinks), similar to Unix operating systems.
+
+Requires less amount of code, comparing to Grunt
+
+Talking about Webpack vs Gulp vs Grunt performance, the two latter look into a defined path for files that match your configuration, while the Webpack analyzes the whole project. It looks through all the dependencies, processes them with loaders and produces a bundled JS file.
+
+------------
+Webpack - Module bundler, written in javascript
+Gulp - Task runner, in Node.js
+Grunt - Task runner, in Node.js
+------------
+What to choose - Your choice will mainly depend on the size of your project, your skill set and whether you are more interested in coding (Gulp task runner) or configuring (Grunt build tool & Webpack).
+------------
+others - Browserify, JSPM or Brunch
+--------------------------------------------------------------------------------
