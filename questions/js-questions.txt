@@ -7,3 +7,58 @@
 4. Different ways of creating objects
 
 5. What is difference between grunt, gulp and webpack
+    https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-better
+6. how to make fire and forget api calls
+
+7. What are mutable and immutable objects
+
+8. What are idempotent functions
+
+1. What is Javascript and ECMAScript
+  - European Computer Machine Association(ECMA) is group of countries that create standards for technology
+  - ECMA-262 is specification general purpose scripting language
+  -Javascript is a general purpose scripting language that adheres to ECMAScript specifications
+  - Javascript engines are V8, SpiderMonkey, Chakra
+  - Javascript was developed in 1996 by Netscape (JScript from Microsoft) and then given to ECMA international for standardization
+  - ECMAScript5 : released in 2009,
+    ECMAScript6: released in July 2015 :  (renamed) ECMAScript 2015(ES6),
+    ECMAScript7: ? :  ?,
+
+2. Name some functionalities of ES6
+    - let, const
+    - template literals
+    - destructuring
+    - spread operator
+    - arrow functions =>
+    - classes
+    - sets
+    - Maps
+    - WeakSet
+    - WeakMap
+    - modules
+    - tail calls
+    - Symbols
+
+
+3. What is the difference between let and const and var
+  - let gives a ---?----- scope
+  - const acts as read only but can be modified
+    ie const a=[1,2,3], a.pop();
+  - var gives a -----?------ scope
+
+4. What are template literals
+  - are used to create strings / multiline strings
+  var book = {
+    name: "Javascript good parts"
+  }
+  console.log("A good book to learn javascript is : "+ book.name); //ES5
+  console.log(`A good book to learn javascript is : ${book.name} `); //ES6 - back ticks and ${}
+
+
+
+
+
+
+
+References:
+http://speakingjs.com/es5/ch17.html#sharing_via_prototype

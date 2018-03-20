@@ -23,6 +23,23 @@ superuser.call(obj, "MySON");
 var a = user.getUserName.bind(obj)
 var b= obj.getUserName.bind(user)
 console.log("Binding----for a: " + a(), "Binding----for b: " + b())
+/*bind*/
+
+var counter = function(){
+  count: 0;
+  inc: function(){
+    "use strict"
+    this.inc++;
+  }
+};
+
+var f = counter.inc;
+f(); //Error : TypeError: Cannot read property 'count' of undefined
+counter.count; // 0  with using strict;
+
+var ff = counter.inc.bind(counter)
+ff()
+counter.count; //1
 
 
 //Spread operator

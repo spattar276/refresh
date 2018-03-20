@@ -32,4 +32,41 @@ delete Foo.prototype.bar;
 
 var trees = ['redwood', 'bay', 'cedar', 'oak', 'maple'];
 delete trees[3];
-console.log(trees.length)
+console.log(trees.length);
+
+var trees = ['redwood', 'bay', 'cedar', 'oak', 'maple'];
+trees.splice(3,1);
+console.log(trees);
+
+
+var obj = { foo: 'a', bar: 'b' };
+obj.foo = undefined;
+Object.keys(obj) //?
+
+delete obj.foo
+Object.keys(obj)
+
+
+var obj = {};
+Object.defineProperty(obj, 'canBeDeleted', {
+    value: 123,
+    configurable: true
+});
+Object.defineProperty(obj, 'cannotBeDeleted', {
+    value: 456,
+    configurable: false
+});
+delete obj.cannotBeDeleted //?
+delete obj.canBeDeleted //?
+
+delete obj.toString //?
+
+ var obj = { someProperty: 'abc' };
+obj['some' + 'Property'] //?
+
+/*HOw to compare 2 objects*/
+var a= {}; var b= {}
+a.constructor === b.constructor
+
+
+/**/

@@ -1,0 +1,23 @@
+1. What is prototypal chaining?
+    - Every function has a prototype property, which contains an object. When this function is invoked using new operator
+      an object is created and this has secret link(__proto__) to prototype object.
+    - the secret link (__proto__) allows methods and properties of prototype object to be used as if it belongs to a newly created object.
+
+      A
+      __proto__
+            |
+            B
+          __proto__
+            |
+            C
+          __proto__
+      A contains number of properties, __proto__ is hidden and points to B.
+      B __proto__ points to C.
+      Chain ends with Object ie highest level parent.
+
+2. What is constructor property ?
+    - Is a special property created on the Object.
+    - It contains reference to the constructor function used to create the object.
+    
+3. How many types of inheritance is possible in javascript
+      1. prototype chaining

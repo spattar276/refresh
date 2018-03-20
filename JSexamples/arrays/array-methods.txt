@@ -1,0 +1,123 @@
+1. What are the different array methods in ES5
+
+    var myArray = [0,1,2,3,4,5]
+    1.
+     myArray.unshift(-1)                   // myArray=[-1,0,1,2,3,4,5] - inserts element to start of the array
+    2.
+     myArray.shift()                       // -1, myArray=[0,1,2,3,4,5] - removes element from start of the array
+    3.
+     myArray.pop()                         // 5, myArray=[0,1,2,3,4] - removes element from end of the array
+    4.
+     myArray.splice(3,1)                   // 3, myArray=[0,1,2,4] -  removes element from index 3
+    5.
+     myArray.splice(2,2, "a", "b", "c")    // [2,4], myArray=[0,1,"a", "b", "c"] - removes elements from index and insert
+    6.
+     myArray.slice(2)                      // ["a", "b", "c"], myArray=[0,1,"a", "b", "c"] - returns new array from the specified index
+
+    7.  join
+    8.  concat
+    9.  indexOf
+    10. lastIndexOf
+    11. reverse
+    12. sort
+    13. toString
+    14. valueOf
+
+    var isEven = function(x){
+      return x%2 === 0;
+    }
+    var numbers = [1,2,3,4,5,6,7,8,9,10]
+
+    15. every:
+        numbers.every(isEven);  //1
+        iterates each elements of array until the return of the function is false;
+    16. some:
+        numbers.some(isEven);  //1,2
+        iterates each elements of array until the return of function is true
+    17. forEach:
+        works like for loop
+    18. map:
+        numbers.map(isEven) //[f,t,f,t,f,t,f,t,f,t]
+        returns new array with the result
+    19. filter:
+        numbers.filter(isEven) //[2,4,6,8,10]
+        return new array with the elements with the function that return true
+    20. reduce:
+        numbers.reduce(function(previousValue, currentValue, index){
+          return previousValue + currentValue
+        })       // 120
+        numbers.reduce(function(a,b){
+            return a-b;
+        })
+        numbers.reduce ((a,b) => a+b) //55
+
+        reduces the array containing the values that match a function well. starts from left
+
+    21. reduceRight:
+        numbers.reduceRight((a,b) => a-b) //-53
+        reduces the array containing the values that match a function well. starts from right
+    22. sort
+        sorts array in lexicographicall order assuming elements to be destructuring
+    23. reverse
+
+    24.flatten
+        var arr1 = [1, 2, [3, 4]];
+        arr1.flatten(); // [1, 2, 3, 4]
+        var arr3 = [1, 2, [3, 4, [5, 6]]];
+        arr3.flatten(); // [1, 2, 3, 4, [5, 6]]
+        arr3.flatten(2); // [1, 2, 3, 4, 5, 6]
+
+2. What are the different array methods in ES6
+      var numbers = [1,2,3,4,5,6,7,8,9,10]
+    1. @@iterators:
+        var i = numbers[Symbol.iterators]();
+        i.next().value  // 1, will return undefined when iterator has no more values to be iterated
+    2. entries:
+        var aEntries = numbers.entries()
+        aEntries.next() // {value: [0,1], done: false}, done become true when there are no more entries to iterate
+                        // {value: [1,1], done: false}
+    3. keys:
+        var aKeys = numbers.keys()
+        aKeys.next() // {value:0, done:false}
+                     // {value:1, done:false}
+    4. values:
+        var aValues = numbers.values()
+        aValues.next()  //{value:1, done:false}
+                        //{value:2, done:false}
+    5. Array.from
+        var even = Array.from(numbers, (n)=> n%2===0) //[false, true, false, true, false, true, false, true, false, true]
+        //creates a new Array based on the function
+
+    6. Array.of
+        var number3 = Array.of(1,2,3,4) //[1,2,3,4]
+        var number4 = Array.of(...numbers) //[1,2,3,4,5,6,7,8,9,10]
+        //create a new array from arguments passed to the method
+
+    7. fill:
+        let num5 = numbers.fill(0) // numbers array is filled with [0,0,0,0,0,0,0,0,0,0]
+        let num6 = numbers.fill(2, 4) //[0,0,0,2,2,2,2,2,2,2]
+        numbers.fill(3, 6,8)//[0,0,0,2,2,3,3,3,0,0]
+
+    8. copyWithin
+        let copyArray = [1, 2, 3, 4, 5, 6];
+        copyArray.copyWithin(0, 2) //[3,4,5,6,5,6]
+        copyArray.copyWithin(2, 0, 2) //[3,4,3,4,5,6]
+        //copies a sequence of values of array  into the position of start index.
+        //copyWithin(startIndex, startIndexValue, endIndexValue)
+
+    9. find , 10. findIndex
+        let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+        function multipleOf13(element, index, array) {
+         return (element % 13 == 0) ?  true : false;
+        }
+        console.log(numbers.find(multipleOf13)); //13
+        console.log(numbers.findIndex(multipleOf13)); //12
+
+    11. includes
+        console.log(numbers.includes(15)); //true;
+        console.log(numbers.includes(20)); //false;
+        let numbers2 = [7,6,5,4,3,2,1];
+        console.log(numbers2.includes(4,5)); // search for 4 from position 5, false
+        //returns true if an element is found else returns false.
+
+    12. TypeArrays
