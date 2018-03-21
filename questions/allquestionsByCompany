@@ -1,0 +1,7 @@
+Charmboard
+
+1] what is the sequence of loading of js,html,css.When does inline CSS load.what is the order of loading files.
+2] document.ready, window.load
+3] I want to run settimeout every 5mins.How will you do that without affecting performance
+4] JS performance - how to do it.What are ways.
+5] Have you used profiler chrome.How to test performance of JS code.
