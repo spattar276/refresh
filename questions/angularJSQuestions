@@ -1,0 +1,13 @@
+1] Differences of $http and $resources
+2] How the digest cycle will work internally - ng-watchers
+3] Explain performance optimization for ng-repeat
+4] What is the pros and cons of prelink in directive
+5] Directives - compiling - pre and post phases
+6] How to count watchers in the page.
+7] Explain me the lifecycle of directive.
+8] Nested directives - how to pass data from directive to another directive
+9] Why use injectors.Diffrence between dependency and injectors
+10] $observe, $new 
+11] $http interceptors, Handling errors
+12] Digest, apply diffrence
+13 Create directive - draggle
