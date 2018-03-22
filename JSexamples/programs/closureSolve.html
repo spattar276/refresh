@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+hi this is me!!!!!
+
+<button id="btn-0">Button 1!</button>
+<button id="btn-1">Button 2!</button>
+<button id="btn-2">Button 3!</button>
+</body>
+<script>
+//Awesome example of closure.Solve
+var prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+  for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+      // for each of our buttons, when the user clicks it...
+      document.getElementById('btn-' + btnNum).onclick = function() {
+          // tell her what she's won!
+          alert(prizes[btnNum1]);
+      };
+  }
+
+//Solution
+
+var prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+var press = function (x) {
+    document.getElementById('btn-' + x).onclick = function() {
+        alert(prizes[x]);
+    }
+};
+for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+    press(btnNum);
+};
+
+//Solution
+var prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+
+for(var i = 0 ; i <=2; i++) {
+
+  var btn = document.getElementById("btn-"+i);
+
+  btn.addEventListener('click', (function (i) {
+    return function () {
+      alert(prizes[i]);
+    }
+  }(i)))
+}
+
+
+//---------------------------------------------------------------------------
+//Solve the below
+const arr = [10, 12, 15, 21];
+for (var i = 0; i < arr.length; i++) {
+    console.log('i==', i);
+  setTimeout(function() {
+    console.log('The index of this number is: ' + i);
+  }, 3000);
+}
+
+//correct
+
+const arr1 = [10, 12, 15, 21];
+for (let i = 0; i < arr1.length; i++) {
+  // using the ES6 let syntax, it creates a new binding
+  // every single time the function is called
+  // read more here: http://exploringjs.com/es6/ch_variables.html#sec_let-const-loop-heads
+  setTimeout(function() {
+    console.log('The index of this number is1: ' + i);
+  }, 3000);
+}
+
+//correct
+const arr2 = [10, 12, 15, 21];
+for (var i = 0; i < arr2.length; i++) {
+  // pass in the variable i so that each function 
+  // has access to the correct index
+  setTimeout(function(i_local) {
+    return function() {
+      console.log('The index of this number is2: ' + i_local);
+    }
+  }(i), 3000);
+}
+
+var text = 'outside';
+function logIt(){
+    console.log(text);
+    var text = 'inside';
+};
+logIt();
+</script>
+</html>
+
