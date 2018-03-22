@@ -1,11 +1,11 @@
-console.log(null+1)
-console.log(null/1)
-console.log("98"/1)
-console.log("98n"/1)
+console.log(null+1) //1
+console.log(null/1) //0
+console.log("98"/1) //98
+console.log("98n"/1) //NaN
 1=="1"; 1===1
 parseInt("A", 10); parseInt("A", 11)
 /*-------*/
-fucntion p(){
+function p(){
   console.log(x)
   var x=10;
   console.log(x)

@@ -103,3 +103,8 @@ What to choose - Your choice will mainly depend on the size of your project, you
 ------------
 others - Browserify, JSPM or Brunch
 --------------------------------------------------------------------------------
+6. The typeof operator can return one of these primitive types/ below are basic data primitive type in javascript
+      string.
+      number.
+      boolean.
+      undefined.
