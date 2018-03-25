@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+Insertion sort
+</body>
+<script>
+function insertion(arr){
+	for(i=0;i<arr.length;i++){
+		for(j=0;j<i;j++){
+			if(arr[i]<arr[j]){
+				let removed = arr.splice(i,1)[0];
+				arr.splice(j,0,removed);
+			}
+		}
+	}
+	return arr;
+}
+
+</script>
+</html>
+

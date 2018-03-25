@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+Remove duplicates
+</body>
+<script>
+function removeDuplicates(arr){
+    var charHash = {};
+    var curItem;
+    var outArray = [];
+
+    for(var i = 0; i<arr.length; i++){
+        curItem = arr[i];
+
+        if(!charHash[curItem]){
+            outArray.push(arr[i]);
+            charHash[curItem] = true;
+        }
+    }
+    return outArray;
+}
+var arr = [1,6,6,2,3,5,6,7,5,6,8,9,8];
+</script>
+</html>
+

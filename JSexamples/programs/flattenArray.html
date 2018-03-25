@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+Flatten array
+</body>
+<script>
+function flatten(arr){
+    var flatArray = [];
+
+    for(var i=0; i<arr.length; i++){
+        if(Array.isArray(arr[i])){
+            flatArray = flatArray.concat(flatten(arr[i]));
+        }
+        else{
+            flatArray.push(arr[i]);
+        }
+    }
+    return flatArray;
+}
+
+var arr = [1,[2,5,[8,9]],[20,30],[[[50],60]]];
+</script>
+</html>
+

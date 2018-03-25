@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+Selection sort
+</body>
+<script>
+function selection(arr){
+	for(i=0;i<arr.length;i++){
+		var min = arr[i];
+		var minIndex = i;
+		for(j=i+1;j<arr.length-1;j++){
+			if(arr[j]<min){
+				min = arr[j];
+				minIndex = j;
+			}
+		}
+		arr.splice(minIndex,1);
+		arr.splice(i,0,min);
+	}
+	return arr;
+}
+</script>
+</html>
+
