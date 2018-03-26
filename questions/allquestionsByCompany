@@ -38,4 +38,15 @@ RazorPay:
   - as and when we can initiate the statement
   - it has dynamic binding on data/function/structure
   - interpreter is must ---- compiler is followed by  interpreter
-  - does not require prior knowledge of program logic      
+  - does not require prior knowledge of program logic 
+
+Aruba Networks
+1] what to load first angular or jquery
+2] JS compiling, memory
+3] type of jquery $, document.getElementById()
+4] what is this,diffrent signatures used
+5] directive direct object
+6] ==, ===.How does object behave with conversion
+7] What are the steps from function constructor to object creation
+8] Deep comparison of objects
+
