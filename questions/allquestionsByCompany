@@ -47,8 +47,30 @@ Aruba Networks
 1] what to load first angular or jquery
 2] JS compiling, memory
 3] type of jquery $, document.getElementById()
-4] what is this,diffrent signatures used
+4] what is this, diffrent signatures used
 5] directive direct object
 6] ==, ===.How does object behave with conversion
 7] What are the steps from function constructor to object creation
 8] Deep comparison of objects
+
+Tejas Networks
+Round 1:
+1) Solve few objective questions on scoping, objects, prototypal chaining, array operations
+2) explain variable hosting
+3) Implement queues using arrays
+4) Scoping of this in closures
+
+Round 2:
+5) [0,1,1,2,0,0,1,2,2,1,1,0,0,0,0] - array contains [0,1,2] elements, sort the array in ascending order
+   Which is best sorting algorithm
+   What is its complexity
+6) Design and implement a panel as below
+    ----------------------------------------------------------------------------
+        | IP address  |     |ADD|  | FIND|
+    ----------------------------------------------------------------------------
+
+    192.3.3.21 X   192.3.3.21 X   192.3.3.21 X   192.3.3.21 X
+
+    ___________________________________________________________________________
+
+7) Design an Alarming system. Suggest UX improvements     
