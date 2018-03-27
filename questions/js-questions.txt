@@ -86,7 +86,7 @@ Gulp , Grunt - They both automate tasks, use Node.js, and they are both powerful
 
 Webpack  is a bundler and it comes in handy when you need to pack multiple assets (images, fonts, etc.) together into a dependency graph.
 ------------
-Diffrences
+Differences
 
 Comparing Grunt vs Gulp, the core difference is that where GruntJS uses configuration objects to define tasks declaratively, Gulp defines them as JavaScript functions. It builds on top of the piping concepts (sources, filters, sinks), similar to Unix operating systems.
 

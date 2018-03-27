@@ -2,12 +2,20 @@
 2] How the digest cycle will work internally - ng-watchers
 3] Explain performance optimization for ng-repeat
 4] What is the pros and cons of prelink in directive
+   - prelink will execute before all of its child directives.
+   Cons
+   - Not safe to do DOM transformation since the compiler linking function will fail to locate the correct elements for linking.
+   - postlink is regular link function which execute after the compilation
 5] Directives - compiling - pre and post phases
 6] How to count watchers in the page.
 7] Explain me the lifecycle of directive.
 8] Nested directives - how to pass data from directive to another directive
-9] Why use injectors.Diffrence between dependency and injectors
-10] $observe, $new 
+9] Why use injectors. Diffrence between dependency and injectors
+10] $observe, $new
 11] $http interceptors, Handling errors
 12] Digest, apply diffrence
-13 Create directive - draggle
+13) Create directive - draggle
+14) When do you call  $apply()?
+    If the scope model is changed outside the Angular Context (Ex: in a function callback)
+15) How many times does $digest loop run?
+    At minimum , it runs 2 and $digest hits the max loop count of 10.

@@ -12,6 +12,7 @@ FICO:
 2) If the client fires 10  XML requests, how does JS single thread handle the responses?
 3) What are the different methods in XMLHttpRequestObject
 4) Which is the best html syntax to create table, table or div and why?
+5) What are interceptors?
 
 RazorPay:
 1) input = ['a','b', 1, 0, null, [1,2], undefined]
@@ -23,19 +24,23 @@ RazorPay:
 3) What are Promises
 4) What are arrow functions
 5) Name few features of ES6
+
 6) div:first-child, section div  - what does it select
 7) Why is box-sizing used
 8) Write a program in pure javascript to highlight a "p" tag on click (use event listeners)
-      function addColor(e) {
-          var selectElement = e.target;
-          if (selectElement.tagName === "P"){
-            selectElement.setAttribute("style","background-color: red");
-            }
+      addColor(e) => {
+        var selectElement = e.target;
+        if (selectElement.tagName === "P"){
+          selectElement.setAttribute("style","background-color: red");
+        }
       }
       var pTags= document.querySelector('p');
       document.addEventListener("click", addColor, false);
+
 9) Javascript is a loosely typed language, what does it mean
   - as and when we can initiate the statement
   - it has dynamic binding on data/function/structure
   - interpreter is must ---- compiler is followed by  interpreter
-  - does not require prior knowledge of program logic      
+  - does not require prior knowledge of program logic
+
+10) What is CROS request. How to allow from client side  
