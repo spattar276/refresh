@@ -1,1 +1,1 @@
-1. What is CSRF and how does it work in client side?
+1. What is CSRF, XSS, SRI, CORS and how does it work in client side?
