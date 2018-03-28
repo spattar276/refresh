@@ -15,6 +15,7 @@ FICO:
 5) What are interceptors?
 
 RazorPay:
+
 1) input = ['a','b', 1, 0, null, [1,2], undefined]
    output:['a', 'b', 1, [1,2]]
    remove the falsely values from array
@@ -24,7 +25,6 @@ RazorPay:
 3) What are Promises
 4) What are arrow functions
 5) Name few features of ES6
-
 6) div:first-child, section div  - what does it select
 7) Why is box-sizing used
 8) Write a program in pure javascript to highlight a "p" tag on click (use event listeners)
@@ -44,6 +44,7 @@ RazorPay:
   - does not require prior knowledge of program logic
 
 Aruba Networks
+
 1] what to load first angular or jquery
 2] JS compiling, memory
 3] type of jquery $, document.getElementById()
@@ -54,6 +55,7 @@ Aruba Networks
 8] Deep comparison of objects
 
 Tejas Networks
+
 Round 1:
 1) Solve few objective questions on scoping, objects, prototypal chaining, array operations
 2) explain variable hosting
@@ -73,4 +75,12 @@ Round 2:
 
     ___________________________________________________________________________
 
-7) Design an Alarming system. Suggest UX improvements     
+7) Design an Alarming system. Suggest UX improvements
+
+Indeecoom Global Services
+
+1) true == "true", true === "true"
+2) Implement multiply(1)(2)(3)
+3) $('.abc .xyz'), $('.abc', '.xyz'), $('.abc .xyz'), $('.abc, .xyz'), explain these jquery selectors
+4) In javascript write a function to select element by attribute-rel like <div rel>
+5) Explain the different option of Angular directive
