@@ -16,6 +16,8 @@ FICO:
 
 RazorPay:
 
+Round1:
+
 1) input = ['a','b', 1, 0, null, [1,2], undefined]
    output:['a', 'b', 1, [1,2]]
    remove the falsely values from array
@@ -43,13 +45,41 @@ RazorPay:
   - interpreter is must ---- compiler is followed by  interpreter
   - does not require prior knowledge of program logic
 
+Round 2 and 3:
+
+10) How to flatten an array
+11) write a pure javascript code to do : dollar('selector').addClass('classname').removeClass('classname');
+13) var $ = document.querySelector;
+    $('body') --- what does it return, and fix the code to retrive the body
+14) for(var i=0; i<4 ; i++){
+      setTimeout(function(){
+        console.log(i)
+        }, 1000)
+    }
+    What is the output?
+    how to fix it to print 1,2,3,4
+    Answer:
+    for(var i=0; i<4 ; i++){
+      setTimeout((function(){
+        console.log(i);
+        })(i), 1000)
+    }
+15) CSS questions:
+    - flex layouts attributes
+    - how to exclude element with same class, like there are 3 headers with class head, one has tail.
+      exclude the element which has class - "head tail"
+      Answer: :not("head tail")
+    - How to clear floats
+    - how to make background fixed with a scroll overlay
+
+
 Aruba Networks
 
 1] what to load first angular or jquery
 2] JS compiling, memory
 3] type of jquery $, document.getElementById()
-4] what is this, diffrent signatures used
-5] directive direct object
+4] what is this, different signatures used
+5] directive direct object cvx
 6] ==, ===.How does object behave with conversion
 7] What are the steps from function constructor to object creation
 8] Deep comparison of objects
@@ -77,10 +107,20 @@ Round 2:
 
 7) Design an Alarming system. Suggest UX improvements
 
+Manager Round:
+
+8) Design a UI client side autocomplete for query results "Display shoes which has price grater than 500"
+9) What are the different Layouting techniques
+10) Propose a UX design to display 1500 navigation menu
+11) What are evaluation criteria for the UI design solutions
+12) What are different grid techniques.
+13) Name few website which uses different layouting techniques and have huge navigation menus
+
+
 Indeecoom Global Services
 
 1) true == "true", true === "true"
 2) Implement multiply(1)(2)(3)
-3) $('.abc .xyz'), $('.abc', '.xyz'), $('.abc .xyz'), $('.abc, .xyz'), explain these jquery selectors
+3) $('.abc .xyz'), $('.abc', '.xyz'), $('.abc.xyz'), $('.abc, .xyz'), explain these jquery selectors
 4) In javascript write a function to select element by attribute-rel like <div rel>
 5) Explain the different option of Angular directive
