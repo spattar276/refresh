@@ -124,3 +124,25 @@ Indeecoom Global Services
 3) $('.abc .xyz'), $('.abc', '.xyz'), $('.abc.xyz'), $('.abc, .xyz'), explain these jquery selectors
 4) In javascript write a function to select element by attribute-rel like <div rel>
 5) Explain the different option of Angular directive
+
+AthenaHealth
+
+1] CSS - display:flex.center the text vertically to image
+2] CSS calc() ?
+3] CSS - transition / transform
+4] perform animations in CSS
+5] After 100 px from scroll, fix a div.After reaching footer, let the div be there.
+6] Show a popup every 4 times of page refresh.After the form submission, the popup should not appear again
+7] event pevent default vs event propagation
+8] CSS - using only css center a div in screen
+9] Semantic html5 structure
+10] How to adjust font size for responsive layouts
+11] Orientation - landscape - how to achieve
+12] Boostrap - column layouts.Which class to use for mobile
+
+
+
+
+
+
+
