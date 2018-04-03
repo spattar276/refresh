@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+hello
+</body>
+<script>
+function checkIfPalindrome(str) {
+    var reverse = str.split("").reverse().join("");
+    return str == reverse;
+}
+
+function isPrime(num) {
+  for(var i = 2; i < num; i++) {
+    if(num % i === 0) 
+    	return false;
+	}
+  return num !== 1;
+}
+
+function longest_palindrome(str) {
+
+    var maxLen = 0,longestStr = '',res;
+
+    for (var i = 0; i < str.length; i++) {
+        var partStr = str.substr(i, str.length);
+
+        for (var j = partStr.length; j >= 0; j--) {
+            var revpartStr = partStr.substr(0, j);
+            if (revpartStr.length <= 1) {
+                continue;
+            }
+
+            if (checkIfPalindrome(revpartStr)) {
+                if (revpartStr.length > maxLen) {
+                    maxLen = revpartStr.length;
+                    longestStr = revpartStr;
+                }
+            }
+        }
+    }
+    res = isPrime(maxLen) ? "YES" : "NO"
+    return res;
+}
+
+console.log(longest_palindrome("122243323341"));
+console.log(longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE"));
+
+</script>
+</html>
+

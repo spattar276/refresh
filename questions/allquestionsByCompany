@@ -140,6 +140,140 @@ AthenaHealth
 11] Orientation - landscape - how to achieve
 12] Boostrap - column layouts.Which class to use for mobile
 
+Aruba
+
+1] var a =10;var b=23;
+
+test(a,b);
+function test(a,b) {
+    a=15;
+    b=20;
+}
+console.log(a,b); //result ? 
+
+2] var a = [1,2,3];
+
+test(a);
+function test(a) {
+    a.push(4);
+}
+console.log(a); //result ? 
+
+3] var a = {key : 10, key1 : 20};
+
+test(a);
+function test(a) {
+    a.key = 60;
+}
+console.log(a); //result ?
+
+4] var a = 200; var b = 300;
+test();
+function test() {
+    alert(a);
+    alert(b);
+    var a;
+    b=30;
+}
+console.log(a,b);
+
+5] Prevent anchor tag from going to next page if there are validation errors from JS only.Alert each clik on <li> in <ul> tag with its text.Write syntax in JS, jquery or angular.
+
+6] Bubbling Vs capturing.give a use case for capturing
+Bubbling and capturing.which one occurs first.precedence
+
+7] Divide a div into four equal boxes.
+Does width include border padding
+Centre a div in a div
+
+8] Position - different types.
+
+9] Diff - display inline Vs display inline block
+Different values for display
+Difference between display none and visibility hidden
+
+10] Write a program
+
+Var a = {"key1":"a","key2":[1,2,3],"key3":{"a":{"key4":"val","key5":"val1"},"b":[1,2,3,4]}};
+
+Print
+---
+If just value 
+key1 
+a
+---
+If array
+key2
+1
+2
+3
+---
+if object
+[{"key4" : "val"} , "key5":"val1"];
+---
+
+11] Find duplicate in array and print them
+
+12] How to send a cookie form front end?Diff between local storage, cookies , session storage
+
+13] One way, 2-way.One time binding?
+
+14] Diff between GET,POST.What all you send with a HTTP call
+
+15] Diff services/factory.Y use services.What is the use?
+
+16] Interceptors.what is the use.
+
+17] How to share data between controllers
+
+18] controllerAs directive ?
+
+19] Diff between emit and broadcast
+
+20] Closure - when to clear garbage collection.What is the disadvantage of closure.
+
+21] When i hit a URL.what happens.How is the file downloaded.what happens if the page is a  non-html
+page.
+
+22] What is inheritance.What is the type inheritance in JS.
+
+23] diff between ==, ===
+
+24] 
+var a = true; var b=false
+if(a) {
+   c= a
+} else {
+  c = b;
+}
+
+optimize the above code  
+
+25] what is this?
+
+var a = {
+  name : 'vibha',
+  getName : function() {
+      console.log(this)  //what is the output on a.getname();?
+  }
+}
+
+26] what is apply, digest, watch.
+
+27] JS best practices. performance
+
+28] How to reduce the number of watchers?.
+
+30] what is the diff between event prevent default and event propagation?.When to use it?
+
+31] parent controller child controller in angularJS.How the data is passed.Will the parent scope object be available in child controller.
+
+32] what is isolated scope in directive?
+
+
+
+
+
 
 
 
