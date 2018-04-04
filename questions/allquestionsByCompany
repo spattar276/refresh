@@ -1,21 +1,21 @@
 Charmboard
-
+=================================================================================================================
 1] what is the sequence of loading of js,html,css.When does inline CSS load.what is the order of loading files.
 2] document.ready, window.load
 3] I want to run settimeout every 5mins.How will you do that without affecting performance
 4] JS performance - how to do it.What are ways.
 5] Have you used profiler chrome.How to test performance of JS code.
-
+=================================================================================================================
 FICO:
-
+=================================================================================================================
 1) How to inherit the properties of one Object to another Object.
 2) If the client fires 10  XML requests, how does JS single thread handle the responses?
 3) What are the different methods in XMLHttpRequestObject
 4) Which is the best html syntax to create table, table or div and why?
 5) What are interceptors?
-
+=================================================================================================================
 RazorPay:
-
+=================================================================================================================
 Round1:
 
 1) input = ['a','b', 1, 0, null, [1,2], undefined]
@@ -73,9 +73,9 @@ Round 2 and 3:
     - How to clear floats
     - how to make background fixed with a scroll overlay
 
-
+=================================================================================================================
 Aruba Networks
-
+=================================================================================================================
 1] what to load first angular or jquery
 2] JS compiling, memory
 3] type of jquery $, document.getElementById()
@@ -85,65 +85,7 @@ Aruba Networks
 7] What are the steps from function constructor to object creation
 8] Deep comparison of objects
 
-Tejas Networks
-
-Round 1:
-1) Solve few objective questions on scoping, objects, prototypal chaining, array operations
-2) explain variable hosting
-3) Implement queues using arrays
-4) Scoping of this in closures
-
-Round 2:
-5) [0,1,1,2,0,0,1,2,2,1,1,0,0,0,0] - array contains [0,1,2] elements, sort the array in ascending order
-   Which is best sorting algorithm
-   What is its complexity
-6) Design and implement a panel as below
-    ----------------------------------------------------------------------------
-        | IP address  |     |ADD|  | FIND|
-    ----------------------------------------------------------------------------
-
-    192.3.3.21 X   192.3.3.21 X   192.3.3.21 X   192.3.3.21 X
-
-    ___________________________________________________________________________
-
-7) Design an Alarming system. Suggest UX improvements
-
-Manager Round:
-
-8) Design a UI client side autocomplete for query results "Display shoes which has price grater than 500"
-9) What are the different Layouting techniques
-10) Propose a UX design to display 1500 navigation menu
-11) What are evaluation criteria for the UI design solutions
-12) What are different grid techniques.
-13) Name few website which uses different layouting techniques and have huge navigation menus
-
-
-Indeecoom Global Services
-
-1) true == "true", true === "true"
-2) Implement multiply(1)(2)(3)
-3) $('.abc .xyz'), $('.abc', '.xyz'), $('.abc.xyz'), $('.abc, .xyz'), explain these jquery selectors
-4) In javascript write a function to select element by attribute-rel like <div rel>
-5) Explain the different option of Angular directive
-
-AthenaHealth
-
-1] CSS - display:flex.center the text vertically to image
-2] CSS calc() ?
-3] CSS - transition / transform
-4] perform animations in CSS
-5] After 100 px from scroll, fix a div.After reaching footer, let the div be there.
-6] Show a popup every 4 times of page refresh.After the form submission, the popup should not appear again
-7] event pevent default vs event propagation
-8] CSS - using only css center a div in screen
-9] Semantic html5 structure
-10] How to adjust font size for responsive layouts
-11] Orientation - landscape - how to achieve
-12] Boostrap - column layouts.Which class to use for mobile
-<<<<<<< HEAD
-=======
-
-Aruba
+Round 2,3,4:
 
 1] var a =10;var b=23;
 
@@ -152,7 +94,7 @@ function test(a,b) {
     a=15;
     b=20;
 }
-console.log(a,b); //result ? 
+console.log(a,b); //result ?
 
 2] var a = [1,2,3];
 
@@ -160,7 +102,7 @@ test(a);
 function test(a) {
     a.push(4);
 }
-console.log(a); //result ? 
+console.log(a); //result ?
 
 3] var a = {key : 10, key1 : 20};
 
@@ -201,8 +143,8 @@ Var a = {"key1":"a","key2":[1,2,3],"key3":{"a":{"key4":"val","key5":"val1"},"b":
 
 Print
 ---
-If just value 
-key1 
+If just value
+key1
 a
 ---
 If array
@@ -242,7 +184,7 @@ page.
 
 23] diff between ==, ===
 
-24] 
+24]
 var a = true; var b=false
 if(a) {
    c= a
@@ -250,7 +192,7 @@ if(a) {
   c = b;
 }
 
-optimize the above code  
+optimize the above code
 
 25] what is this?
 
@@ -272,6 +214,65 @@ var a = {
 31] parent controller child controller in angularJS.How the data is passed.Will the parent scope object be available in child controller.
 
 32] what is isolated scope in directive?
+=================================================================================================================
+Tejas Networks
+=================================================================================================================
+Round 1:
+1) Solve few objective questions on scoping, objects, prototypal chaining, array operations
+2) explain variable hosting
+3) Implement queues using arrays
+4) Scoping of this in closures
+
+Round 2:
+5) [0,1,1,2,0,0,1,2,2,1,1,0,0,0,0] - array contains [0,1,2] elements, sort the array in ascending order
+   Which is best sorting algorithm
+   What is its complexity
+6) Design and implement a panel as below
+    ----------------------------------------------------------------------------
+        | IP address  |     |ADD|  | FIND|
+    ----------------------------------------------------------------------------
+
+    192.3.3.21 X   192.3.3.21 X   192.3.3.21 X   192.3.3.21 X
+
+    ___________________________________________________________________________
+
+7) Design an Alarming system. Suggest UX improvements
+
+Manager Round:
+
+8) Design a UI client side autocomplete for query results "Display shoes which has price grater than 500"
+9) What are the different Layouting techniques
+10) Propose a UX design to display 1500 navigation menu
+11) What are evaluation criteria for the UI design solutions
+12) What are different grid techniques.
+13) Name few website which uses different layouting techniques and have huge navigation menus
+=================================================================================================================
+
+Indeecoom Global Services
+=================================================================================================================
+1) true == "true", true === "true"
+2) Implement multiply(1)(2)(3)
+3) $('.abc .xyz'), $('.abc', '.xyz'), $('.abc.xyz'), $('.abc, .xyz'), explain these jquery selectors
+4) In javascript write a function to select element by attribute-rel like <div rel>
+5) Explain the different option of Angular directive
+=================================================================================================================
+AthenaHealth
+=================================================================================================================
+1] CSS - display:flex.center the text vertically to image
+2] CSS calc() ?
+3] CSS - transition / transform
+4] perform animations in CSS
+5] After 100 px from scroll, fix a div.After reaching footer, let the div be there.
+6] Show a popup every 4 times of page refresh.After the form submission, the popup should not appear again
+7] event pevent default vs event propagation
+8] CSS - using only css center a div in screen
+9] Semantic html5 structure
+10] How to adjust font size for responsive layouts
+11] Orientation - landscape - how to achieve
+12] Boostrap - column layouts.Which class to use for mobile
+
+=================================================================================================================
+Aruba
 
 
 
@@ -283,4 +284,4 @@ var a = {
 
 
 
->>>>>>> 8b2a6b7c211b7fdbc014fa2cb45eba318e8a14d6
+
