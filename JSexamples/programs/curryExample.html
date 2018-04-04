@@ -59,6 +59,28 @@ curry(add, 1)(2);// 3
 
 //const curry = (fn, ...args) => args.length === fn.length ? fn(...args) : curry.bind(this, fn, ...args)
 
+var curry = function(fn){
+  if (typeof fn !== 'function'){
+    throw Error("Not a function")
+  }
+  return function curriedfn(){
+    var arg= Array.prototype.slice.call(arguments);
+    if(arg.length < fn.length){
+      return function(){
+        return curriedfn.apply(null, arg.concat(Array.prototype.slice.call(arguments)))
+      }
+    }
+    return fn.apply(null,arg)
+  }
+}
+
+function add(a,b){
+  return a+b;
+}
+
+var makecurry = curry(add)
+
+console.log(makecurry(1)(2))
+
 </script>
 </html>
-

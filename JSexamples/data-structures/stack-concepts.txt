@@ -1,9 +1,13 @@
 
 Stacks:
-  - Use when we have most recent events to be captured/ string operations/recurrsive function calls/ algebraic operations
+  - Use when we have most recent events to be captured/ string operations/recursive function calls/ algebraic operations
   - works LIFO /FILO
   - it is time dependent
   - top is the sentinel variable used to point the block of the data at any point of time
   - peek can retrieve the present size of the stack.
   - push - pushes the element at the top, size of the stack increment by 1 block
   - pop - extract the element from top , size of the stack reduces by 1 block
+
+
+Queues:
+ - Work with concept of FIFO

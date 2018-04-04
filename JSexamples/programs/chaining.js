@@ -1,0 +1,66 @@
+// define the class
+var Kitten = function() {
+  this.name = 'Garfield';
+  this.color = 'brown';
+  this.gender = 'male';
+};
+
+Kitten.prototype.setName = function(name) {
+  this.name = name;
+  return this;
+};
+
+Kitten.prototype.setColor = function(color) {
+  this.color = color;
+  return this;
+};
+
+Kitten.prototype.setGender = function(gender) {
+  this.gender = gender;
+  return this;
+};
+
+Kitten.prototype.save = function() {
+  console.log(
+    'saving ' + this.name + ', the ' +
+    this.color + ' ' + this.gender + ' kitten...'
+  );
+
+  // save to database here...
+
+  return this;
+};
+
+var bob = new Kitten();
+
+var tmp = bob.setName('Bob');
+tmp.setColor('black');
+
+console.log(tmp === bob);
+
+///////////////////
+// WITHOUT CHAINING
+
+var bob = new Kitten();
+
+bob.setName('Bob');
+bob.setColor('black');
+bob.setGender('male');
+
+bob.save();
+
+// OUTPUT:
+// > saving Bob, the black male kitten...
+
+
+///////////////////
+// WITH CHAINING
+
+new Kitten()
+  .setName('Bob')
+  .setColor('black')
+  .setGender('male')
+  .save();
+
+// OUTPUT:
+// > saving Bob, the black male kitten...
