@@ -214,6 +214,11 @@ var a = {
 31] parent controller child controller in angularJS.How the data is passed.Will the parent scope object be available in child controller.
 
 32] what is isolated scope in directive?
+
+33] What happens if DOCTYPE is not given.Quirks mode?
+
+34] What is anonymous function?
+
 =================================================================================================================
 Tejas Networks
 =================================================================================================================
@@ -272,7 +277,140 @@ AthenaHealth
 12] Boostrap - column layouts.Which class to use for mobile
 
 =================================================================================================================
-Aruba
+Apptuss software
+
+1] use strict; 
+
+function s() {
+  return function s() {
+
+  }
+}
+console.log(s());
+
+2] var arr = [undefined, null, '**', '$$', 123];
+console.log(arr);
+
+3] function a() {
+  
+}
+console.log('a==', a());
+
+4] 1+undefined
+
+5] !!123
+
+6] what is the diffrence between var , let , const
+
+7] In a directive what is '@'
+
+8] write a program to find the sum of the numbers in an array
+
+9] var a = [];
+a[0] = function f () {
+  console.log('hello')
+};
+
+console.log(a[0]());
+
+10] What is pass by reference, pass by value.Diff between primitive and non primitive value
+
+11] what is the diffrence between undefined, null.When you use undefined , null
+
+12] typeof undefined == typeof null ?
+
+13] How to achieve inheritance ?
+
+14] what are the 5 cool things about JS
+
+15] What is this?
+
+16] function a() {
+  var i =100;
+}
+console.log(i) ?
+
+17] var b = 100;
+g();
+function g() {
+  b=3;
+}
+console.log(b) ?
+
+18] 
+function sum() {
+  
+}
+
+function x(sum) () {
+  
+}
+
+what is the above function programming.Have you heard of programming paragim?
+
+19] Explain hoisting?.How is the memory allocated?
+
+20] what is the use of new operator apart from object creation ?
+
+21] What happens behind when an object is instaitated.How it happens?
+
+22] what is promise.Why use promise.Then what is callback hell?
+
+21] function a() {
+  
+  setimeout(function(){
+    console.log('hi');, 
+  }, 0);
+
+  for(var i=0;i<1000000;i++) {
+
+  }
+}
+a();
+when will the settimeout happen , After how much time settimeout will execute?
+
+23] Why use strict ?
+
+24] var a = [];
+ a["0"] = 100;
+
+console.log('a==', a["0"]);
+
+25] typeof("hello");typeof('hello');
+
+26] function p() {
+  console.log('hello');
+}
+console.log(typeof p);
+
+27] what is prototype in JS?
+
+28] Give example for modules.Which library does angularJS use for promises?
+------------------------------------------------------------------------------------------------
+make my trip
+
+1] When does JS throw reference error
+2] what is closure.How to create private variable
+3] Peformance of sites in depth
+4] Service workers?
+5] Implement JS for User , Employees and Admin who have soordinates
+6] What is hoisting?.A code snippet question
+7] What is the diff b/w xhtml , html
+8] CDN advantage, minification advantages
+9] angular vs react
+10] image optimization techniques
+11] What is web workers
+12] What is template management system
+13] What have you done to improve the performance for for your project
+14] why did you choose angularJS for your project
+15] What is the build tool you have used?
+16] Can you use the same image and resize in your application?.What kind of images need to be used
+for better performance?
+17] How does the Loading of the HTML page happen?,How are images loaded (one after the other?,.Sequentially?)
+------------------------------------------------------------------------------------------------
+
+
+
 
 
 
