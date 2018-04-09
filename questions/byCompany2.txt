@@ -1,0 +1,18 @@
+Torento
+1) What is REST
+2) What is Agile
+3) var a =[{id:10, name: "abc"}, {id:20, name: "xyz"}]
+Write a method a.removeObject(10) that removes object which contains id value as 10
+4) What are synchronous and asynchronous statements in javascript
+5) Design a category view with 3 sublevels category. User shouls be able to add and remove categories at each sublevels
+6)
+=================================================================================================================
+Tuebora
+=================================================================================================================
+
+1)sort the data of 1GB given 20MB of memory. Suggest a sorting algorithm
+2) var inputarr =[8,5,6,7,8,6,5,9,2,6]Sort the array in descending order of frequency to get
+       outputarr = [6,6,6,8,8,5,5,9,7,2]
+3) var str = "Write the code before you answer";
+      outstr = "answer you before code the write"; reverse the string by words
+4)      
