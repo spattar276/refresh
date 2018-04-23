@@ -15,4 +15,39 @@ Tuebora
        outputarr = [6,6,6,8,8,5,5,9,7,2]
 3) var str = "Write the code before you answer";
       outstr = "answer you before code the write"; reverse the string by words
-4)      
+4)
+=================================================================================================================
+Intuit
+=================================================================================================================
+1) Implement _.extend(destination, source1, source2...sourceN)
+2) can we add prototype on object literals like var a ={}; a.prototype.addfunction() ?
+
+=================================================================================================================
+Flipkart
+=================================================================================================================
+1. Coding round: Implement a week calendar with configurable events just like outlook
+2. [{ timeout: 200, execute: function1(){} }, {timeout: 100, execute: function2(){}}]
+Write a program to execute the functions in the object only after the given timeout in a sequential way
+- forEach loop --- not possible
+- use recurrsions
+
+3. How is session management done when ther are multiple API are used from different domains
+
+
+
+
+Namespacing
+TreeShaking
+
+Immutability
+
+A mutable object is an object whose state can be modified after it is created.
+-objects and arrays are mutable, not primitive values.
+
+Immutables are the objects whose state cannot be changed once the object is created.
+-- String and Numbers are Immutable.
+
+React:
+Its light weight
+Fast for rendering
+Concentrates on the view by creating a duplicate of the DOM (virtual DOM) and add state and functionality to it
