@@ -275,8 +275,7 @@ AthenaHealth
 10] How to adjust font size for responsive layouts
 11] Orientation - landscape - how to achieve
 12] Boostrap - column layouts.Which class to use for mobile
-=================================================================================================================
-<<<<<<< HEAD
+=====================================================================================================
 =======
 Apptuss software
 
@@ -409,19 +408,55 @@ make my trip
 for better performance?
 17] How does the Loading of the HTML page happen?,How are images loaded (one after the other?,.Sequentially?)
 ------------------------------------------------------------------------------------------------
+Tekion
 
+1] what is diff between shallow copy and deep copy
+2] diff between array find, array filter
+3] 1+"1"+3 , 3-"5"?
+4] Why do you need callbacks ?
+5] Diffrences between promises and callbacks
+------------------------------------------------------------------------------------------------
+lending kart
 
+1] event loop - in detail - settimeout in for loop
+2] closure for variable  number of arguments
+3] html loading
+4] unshifting an array - [1,2,3,4,9]  => [9,1,2,3,4]
+5] undefined == null?
+6] when does angular run digest cycle.dirty checking?
+7] example of call, apply
+8] How does internet work
+9] Does CSS file not resolving cause the html to stop loading - asynch defer for script tags?
+10] What is undeclared
+------------------------------------------------------------------------------------------------
+Color tokens
 
+1] Write a program to find a unique pair of values which equls a target value.
+2] Write a program which maps the alphabets to codes
+3] Write a program to make multple requests to gather data and extract title and sort in ascending order. [Node Js - http call]
+4] for() {settiemout}
+5] var a  {'title' : 'vibha', 'key' : 'oh'};
+var b = Object.create(a);
+delete b.title ? 
+6] sorting var s = [4,5,6,7];s.sort();
+7] var info = {'city' : 'bangalore', 'street' : 'bang'};
+info.city = 'undefined'; ? 
 
+2nd round and 3d round
 
-
-
-
-
-
-
-
-
-
-
->>>>>>> f01a2a24e72addec7393c4954db574c39a34ebb5
+garbage collection in JS
+app config - factories and services?
+ployfills
+publish subscribe
+display digital clock
+tic tack toe game
+fibonacci
+implement stack
+own sorting method
+hoisting - var a or function a() {}.what takes precendence
+diff between services and factories.advantages?
+print child class (inheritance)- what you see.
+object.assign()
+how do asynch patterns work in event loop?
+fallback for diffrent versions of browsers
+------------------------------------------------------------------------------------------------
