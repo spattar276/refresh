@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+Inheritance
+</body>
+<script>
+  
+function Person(first, last, height, gender) {
+	this.name = {
+		first,
+		last
+	};
+	this.height = height;
+	this.gender = gender
+}
+
+Person.prototype.greeting = function() {
+	console.log('Hello', this.name.first+''+this.name.last)
+}
+
+
+function Student(first, last, height, gender, subject) {
+	Person.call(this, first, last, height, gender)
+	this.subject = subject;
+}
+
+Student.prototype = Object.create(Person.prototype);
+// Set the "constructor" property to refer to Student
+Student.prototype.constructor = Student;
+console.log('Student1223==',Student,Student.prototype);
+Student.prototype.greeting = function(){
+  console.log("Hello, I'm " + this.name.first + ". I'm studying "
+              + this.subject + ".");
+};
+/*We need to do one more thing before we move on. After adding the last line, Teacher.prototype's constructor property is now equal to Person(), because we just set Teacher.prototype to reference an object that inherits its properties from Person.prototype! Try saving your code, loading the page in a browser, and entering Teacher.prototype.constructor into the console to verify.*/
+
+var student = new Student('vibha', 'gn', '165', 'F', 'JS');
+console.log('student==', student.subject);
+
+student.greeting();
+//var student = object.create(Person.prototype);
+
+
+
+</script>
+</html>
+
