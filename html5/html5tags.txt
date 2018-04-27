@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+        <article>	Specifies an article
+        <aside>	    Specifies content aside from the page content
+        <audio>	    Specifies sound content
+        <bdi>	    For bi-directional text formatting
+        <canvas>	Define graphics
+        <data>	    Allows for machine-readable data to be provided
+        <datalist>	Specifies an "autocomplete" dropdown list
+        <details>	Specifies details of an element
+        <dialog>	Specifies that part of an application is interactive.
+        <embed>	    Specifies external application or interactive content
+        <figcaption>	Specifies caption for the figure element.
+        <figure>	Specifies a group of media content, and their caption 
+        <footer>	Specifies a footer for a section or page
+        <header>	Specifies a group of introductory or navigational aids, including hgroup elements	
+        <hgroup>	Specifies a header for a section or page.
+                    NOTE: This element has been dropped from W3C HTML5 spec but it is still included in WHATWG Living Standard.
+
+        <keygen>	Generates a key pair
+            <main>	Specifies the main content area of an HTML document.
+                    <mark>	Specifies marked text
+                            <meter>	Specifies measurement within a predefined range
+                                    <nav>	Specifies navigation links
+                                            <output>	Specifies some types of output
+                                                    <progress>	Specifies progress of a task of any kind
+                                                            <rb>	Marks the base text component of a ruby annotation.
+                                                                    <rp>	Used for the benefit of browsers that don't support ruby annotations	
+                                                                            New 
+                                                                            <rt>	Specifies the ruby text component of a ruby annotation.	
+                                                                            New 
+                                                                            <rtc>	Marks a ruby text container for ruby text components in a ruby annotation.	
+                                                                            New 
+                                                                            <ruby>	Specifies a ruby annotation (used in East Asian typography)
+        <section>	Specifies a section
+                <summary>	Specifies a summary / caption for the <details> element
+                        <template>	Declares HTML fragments that can be cloned and inserted in the document by script.
+                                <time>	Specifies a date/time
+                                        <track>	Specifies a text track for media such as video and audio
+                                            <video>	Specifies a video	
+                                                    New 
+                                                    <wbr>	Specifies a line break opportunity for very long words and strings of text with no spaces.
+</body>
+<script>
+
+</script>
+</html>
+

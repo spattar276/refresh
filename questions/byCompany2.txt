@@ -32,22 +32,67 @@ Write a program to execute the functions in the object only after the given time
 - use recurrsions
 
 3. How is session management done when ther are multiple API are used from different domains
+=================================================================================================================
+Athena
+=================================================================================================================
+1. What does a picture tag does
+2. What are differen type of inheritances in javascript
+3. Using CSS Flex, align three elements in such a way that 1st and 2nd are at extreme ends(left and right),
+ and center one spaced more
+4.
+
+=================================================================================================================
+Paytm
+=================================================================================================================
+1. [1,2,3,4].join('').split()
+2. Extract numbers from string "abc123fr4$%&"
+=================================================================================================================
+Vlocity
+=================================================================================================================
+1. What is session storage and local storage
+2. Name few features of HTML5
+3. Explain event loop
+4. Can you draw architecture diagram of V8 engine
+5. Explain variable hoisting
+6. Explain the output
+      var a = 1;
+      function b(){
+        a=10;
+        return;
+        function a(){}
+      }
+      console.log(a) 
+7. "abc" && "ABC" && undefined  //?
+   "abc" && "ABC" || undefined  //?
+8. Write a method to do below
+   [1,2,3,4].double() // output: [2,4,6,8]
+9. NaN === NaN //?
+10. Write a function to get factorial of a number
+11. write a function add(10)(5) // output: 15
+12. In Angularjs, if A watches B and B watches A, will there be a infinite loop of dirty check
+13. With respect to CSS specificity explain which color gets applied
+    <ul>
+      <li>first</li>
+      <li class="red"> second </li>
+      <li>third</li>
+    </ul>
+
+    ul li:nth-child(3) {background-color : green}
+    ul li.red {background-color : red}
+ 14. var a = 1;
+      function foo(){
+        function bar(){ return 1}
+        return;
+        function bar(){ return 8}
+        bar()
+      }
+      console.log(foo())  
+15. In angular what is difference between services and factories
+16. What is a singleton pattern ? Do you know factory pattern
+17. Why are arrow function liked by developers
+18. What is Array destructuring 
+19. How do you break the idempotency of GET calls    
+20. What happens if we give negavitve padding to block level elements
+21. Is CSS case sensistive.
 
 
-
-
-Namespacing
-TreeShaking
-
-Immutability
-
-A mutable object is an object whose state can be modified after it is created.
--objects and arrays are mutable, not primitive values.
-
-Immutables are the objects whose state cannot be changed once the object is created.
--- String and Numbers are Immutable.
-
-React:
-Its light weight
-Fast for rendering
-Concentrates on the view by creating a duplicate of the DOM (virtual DOM) and add state and functionality to it
